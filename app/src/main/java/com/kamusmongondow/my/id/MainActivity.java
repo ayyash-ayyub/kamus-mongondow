@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
             String word = inputText.getText().toString().trim().toLowerCase();
             String translation = finalDictionary.optString(word, "Tidak ditemukan");
             resultText.setText(translation);
+            resultText.setTextSize(28);
         });
     }
 
